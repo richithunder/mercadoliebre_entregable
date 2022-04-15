@@ -100,8 +100,19 @@
 .search-form {
   margin-top: 10px;
   width: 50%;
+  height: 30%;
   align-self: center;
   margin-left: 15px;
+  display: flex;
+  
+}
+
+.search-btn {
+  border: none;
+  margin-right: auto;
+  position: relative;
+  left: -20px;
+  
 }
 
 .logo {
@@ -119,7 +130,10 @@
 }
 
 .search-input {
-  width: 75%;
+  width: 95%;
+  border: none;
+  height: 50%;
+  border-radius: 10px;
 }
 
 .mg-bottom-20 {
@@ -162,9 +176,14 @@
 
   .search-form {
     width: 45%;
+    height: 30%;
     margin-left: 30px;
     align-self: center;
+    background-color: white;
+    border-radius: 10px;
   }
+
+  
 
   .buy-with-dues {
     align-self: center;
@@ -227,6 +246,10 @@
     display: block;
   }
 
+  .search-btn {
+    font-size: 150%;
+  }
+  
   .product-card:hover {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
   }
