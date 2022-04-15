@@ -151,6 +151,21 @@
   
 }
 
+.button-primary {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  height: 30px;
+ 
+}
+
+.button-gray {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  height: 30px;
+}
+
+
 @media (min-width: 480px) {
 
   .product-card {
