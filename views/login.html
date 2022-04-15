@@ -20,38 +20,50 @@
 
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/theme.css" />
+    <link rel="stylesheet" href="/css/home.css" />
 
-    <!-- <link rel="stylesheet" href="/css/home.css" /> -->
   </head>
 
-  <body>
-    <header class="bg-main padding-8">
-      <section>
-        <h1 class="width-50">
+  <body class="bg-light-gray">
+    <header class="bg-main padding-8 header">
+      <section class="top-header">
+
+        <div class="logo-and-search">
+        <h1 class="width-50 logo">
           <img src="/images/logo-mercado-liebre.svg" alt="Mercado Liebre" />
         </h1>
-        <p>lugar para la barra de busqueda</p>
-        <p class="text-center">
+        <form id="search-form" class="search-form ">
+          <input type="search" name="search" id="search" class="search-input"/>
+          <button type="submit" id="search-btn">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+        </div>
+
+        
+        <p class="text-center buy-with-dues">
           <i class="fas fa-hand-holding-usd"></i>
           Comprá en cuotas y sin tarjeta de crédito
         </p>
       </section>
-      <nav>
-        <ul>
-          <li><a href="">Ofertas</a></li>
-          <li><a href="">Tiendas Oficiales</a></li>
-          <li><a href="">Ayuda</a></li>
+      <nav class="nav-bar">
+        <ul class="subcontainer-nav-left">
+          <li class="margin-left-10"><a href="">Ofertas</a></li>
+          <li class="margin-left-10"><a href="">Tiendas Oficiales</a></li>
+          <li class="margin-left-10"><a href="">Vender</a></li>
+          <li class="margin-left-10"><a href="">Ayuda</a></li>
         </ul>
-        <ul>
-          <li>
+
+        <ul class="subcontainer-nav-right">
+          <li class="margin-left-10">
             <a href="/register"
-              >Creá tu cuenta <i class="far fa-id-card"></i
+              >Creá tu cuenta <i class="far fa-id-card "></i
             ></a>
           </li>
-          <li>
+          <li class="margin-left-10">
             <a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a>
           </li>
-          <li>
+          <li class="margin-left-10">
             <a href="">Mis Compras <i class="fas fa-shopping-basket"></i></a>
           </li>
         </ul>
@@ -60,7 +72,32 @@
         <i class="fas fa-bars"></i>
       </div>
     </header>
-    <main></main>
+    <main>
+      <form action="/" method="get" class="margin-y-16 main-form">
+        <label class="hidden" for="fullname">Nombre y apellido</label>
+       
+        <input
+          class="input-box mg-bottom-40"
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Nombre de usuari@"
+        />
+
+        <label class="hidden " for="password">Contraseña</label>
+        <input
+          class="input-box mg-bottom-40"
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Contraseña"
+        />
+
+        <button class="button-primary send-button" type="submit">
+          Ingresar
+        </button>
+      </form>
+    </main>
     <footer></footer>
   </body>
 </html>
